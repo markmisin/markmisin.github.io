@@ -1,7 +1,164 @@
-Hello World! Play these games!
-<table>
-  <td><a href="game_1/index.html">Trigonometry - Web version - Desktop & Mobile (Recommended: Chrome - Avoid Firefox)</a></td>
-</table>
-<table>
-  <td><a href="https://drive.google.com/drive/folders/1d9NUnWsSWsUALMtEsfo4dwCa9KR6bHmh?usp=drive_link">Trigonometry - Windows & Ubuntu Linux for Desktop</a></td>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Misin Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+            font-weight: bold; /* Make all text bold */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes full height */
+        }
+        .header {
+            height: 20vh; /* 20% of the viewport height */
+            background: linear-gradient(to bottom, #4a7e2b, #2d6a2a); /* 25% darker green gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* 100% white text for the header */
+            font-size: 2em; /* Font size for the header */
+        }
+        .content {
+            flex: 1; /* Allow content to grow and fill space */
+            /*height: 80vh; /* 80% of the viewport height */
+            background-color: #2f4f4f; /* Dark slate gray as a complementary color */
+            color: rgba(255, 255, 255, 0.8); /* White text at 80% opacity */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .links {
+            margin-top: 20px; /* Space above links */
+        }
+
+        .triangle-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Center the button and triangles */
+        }
+
+        a {
+            background-color: rgba(0, 51, 102, 0.588); /* Dark Blue with transparency */
+            color: rgba(255, 255, 255, 0.8); /* White text at 80% opacity */
+            display: block; /* Make links block elements */
+            width: 850px;
+            padding: 15px 20px; /* Increased padding for larger buttons */
+            text-decoration: none; /* Remove underline from links */
+            margin-bottom: 10px; /* Space between links */
+            border-radius: 5px; /* Rounded corners for a softer look */
+            font-size: 1.3em; /* Increased font size for better readability */
+            white-space: nowrap; /* Prevent text from wrapping to a new line */
+        }
+        a:hover {
+            background-color: rgba(0, 64, 128, 0.588); /* Slightly lighter dark blue on hover with transparency */
+        }
+
+        .triangle-left {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 20px solid #4a7e2b; /* Green color matching header for left-pointing triangle */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth transition */
+        }
+        .triangle-right {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 20px solid #4a7e2b; /* Green color matching header for right-pointing triangle */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth transition */
+        }
+        .triangle-container:hover .triangle-left,
+        .triangle-container:hover .triangle-right {
+            opacity: 1; /* Show triangles on hover */
+        }
+
+        footer {
+            background-color: #4a7e2b; /* Same color as header */
+            color: white; /* White text color for footer */
+            display: flex;
+            justify-content: center; /* Center the button in the footer */
+            align-items: center;
+            padding: 20px;
+        }
+        .footer-content {
+           display:flex;
+           font-size: 16px;
+           color: white;
+           justify-content:flex-end;
+           width :100%;
+           align-items:center;
+           margin-right :20px;
+       }
+       .privacy-button {
+           background-color: rgba(0, 51, 102, 0.588);
+           color: white;
+           padding: 10px 15px; /* Adjust padding as needed */
+           border-radius: 5px;
+           text-decoration: none;
+           width: auto;
+           text-align: center; /* Centers text horizontally */
+           line-height: 20px; /* Adjust this value to match the button height for vertical centering */
+           display: inline-block; /* Allows the button to adjust its width */
+           /* Remove any fixed width */
+           margin-right:auto;
+           }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        Unleash Your Inner Math Genius!
+    </div>
+    <div class="content">
+        <h2>Play Now and Boost Your Math Skills!</h2>
+        <div class="links">
+            <div class="triangle-container">
+                <div class="triangle-left"></div>
+                    <a href="https://markmisin.github.io/game_1/index.html">Wars of Trigonometry - Play it on Google Chrome directly - Avoid other browsers</a>
+                <div class="triangle-right"></div>
+            </div>
+            <div class="triangle-container">
+                <div class="triangle-left"></div>
+                    <a href="https://drive.google.com/drive/folders/1d9NUnWsSWsUALMtEsfo4dwCa9KR6bHmh">Wars of Trigonometry - Play it on Windows & Linux</a>
+                <div class="triangle-right"></div>
+            </div>
+            <div class="triangle-container">
+                <div class="triangle-left"></div>
+                    <a href="https://store.steampowered.com/app/3018890/The_ultimate_Math_teaching_game/">The Ultimate Math Teaching Game - Play it on Steam</a>
+                <div class="triangle-right"></div>
+            </div>
+            <div class="triangle-container">
+                <div class="triangle-left"></div>
+                    <a href="https://store.epicgames.com/en-US/p/the-ultimate-math-teaching-game-32e5cf">The Ultimate Math Teaching Game - Play it on Epic Games Store</a>
+                <div class="triangle-right"></div>
+            </div>
+            <div class="triangle-container">
+                <div class="triangle-left"></div>
+                    <a href="https://linktr.ee/markmisinengineering">Check out all my products including high quality Udemy courses in engineering</a>
+                <div class="triangle-right"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+       <!-- Centered Privacy Policy Button -->
+          <!--  <a href="https://markmisin.github.io/" class="privacy-button">Privacy Policy</a> -->
+       <!-- Right-aligned Text -->
+       <span class="footer-content">Mark Misin Engineering</span>
+    </footer>
+
+</body>
+</html>
